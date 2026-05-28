@@ -1,7 +1,8 @@
 package com.iwdad;
 
 
-import com.iwdad.moditemzh.ModItems;
+import com.iwdad.block.ModBlocks;
+import com.iwdad.items.ModItems;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -21,6 +22,9 @@ public class Diaodiao implements ModInitializer {
 
 
 		ModItems.initialize();
+		
+		LOGGER.info("物品加载");
+		ModBlocks.initialize();
 		LOGGER.info("方块加载");
 	}
 		
