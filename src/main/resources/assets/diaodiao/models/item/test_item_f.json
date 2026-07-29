@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 {
     "parent": "item/generated",
     "textures": {
         "layer0": "diaodiao:item/test_item_f"
     }
 }
+=======
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "diaodiao:item/test_item_f"
+    }
+}
+>>>>>>> 90e2e8f3b5d96c002e613eddb00c9b14f5df95fa

@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 {
     "parent": "block/cube_all",
     "textures": {
         "all": "diaodiao:block/condensed_dirt"
     }
+=======
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "diaodiao:block/condensed_dirt"
+    }
+>>>>>>> 90e2e8f3b5d96c002e613eddb00c9b14f5df95fa
 }

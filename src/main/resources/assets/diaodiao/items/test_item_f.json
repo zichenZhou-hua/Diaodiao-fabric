@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 {
   "model": {
     "type": "minecraft:model",
     "model": "diaodiao:item/test_item_f"
   }
+=======
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "diaodiao:item/test_item_f"
+  }
+>>>>>>> 90e2e8f3b5d96c002e613eddb00c9b14f5df95fa
 }
