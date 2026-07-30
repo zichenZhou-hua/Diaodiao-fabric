@@ -1,4 +1,4 @@
-package com.iwdad.ModCreativeModeTab;
+package com.iwdad.CreativeModeTab;
 
 public class ModCreativeModeTab {
 
