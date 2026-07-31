@@ -37,7 +37,13 @@ public class ModBlocks {
 		    BlockBehaviour.Properties.of().sound(SoundType.GRASS),
 		    true
     );
-    
+
+	public static final Block SQUAT_TOILET  = register(
+			"squat_toilet",
+			Block::new,
+			BlockBehaviour.Properties.of().sound(SoundType.GRASS),
+			true
+	);
 
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
 		ResourceKey<Block> blockKey = keyOfBlock(name);
