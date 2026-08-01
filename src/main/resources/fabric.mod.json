@@ -9,9 +9,9 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/zichenZhou-hua/Diaodiao-fabric"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-v3",
 	"icon": "assets/diaodiao/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -22,7 +22,7 @@
 			"com.iwdad.client.DiaodiaoClient"
 		],
 		"fabric-datagen": [
-			"com.iwdad.client.DiaodiaoDataGenerator"
+			"com.iwdad.client.datagen.DiaodiaoDataGenerator"
 		]
 	},
 	"mixins": [
