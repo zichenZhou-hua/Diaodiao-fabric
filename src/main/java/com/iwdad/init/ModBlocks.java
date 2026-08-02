@@ -1,4 +1,4 @@
-package com.iwdad.items;
+package com.iwdad.init;
 
 import java.util.function.Function;
 
@@ -22,19 +22,30 @@ import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 public class ModBlocks {
 	
     public static final Block CONDENSED_DIRT = register(
-		    "condensed_dirt",
+		    ModIdmap.CONDENSED_DIRT,
 		    Block::new,
-		    BlockBehaviour.Properties.of().sound(SoundType.GRASS),
-		    true
+		    BlockBehaviour.Properties.of().sound(SoundType.GRASS)
     );
+	public static final Block SQUAT_TOILET  = register(ModIdmap.SQUAT_TOILET,
 
-	public static final Block SQUAT_TOILET  = register(
-			"squat_toilet",
 			Block::new,
-			BlockBehaviour.Properties.of().sound(SoundType.GRASS),
-			true
+			BlockBehaviour.Properties.of().sound(SoundType.GRASS)
 	);
 
+
+	private static Block register(ResourceKey<Block> blockkey, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+		// Create the block instance
+		Block block = blockFactory.apply(properties.setId(blockkey));
+
+		return Registry.register(BuiltInRegistries.BLOCK, blockkey, block);
+	}
+
+
+
+
+
+
+	@Deprecated
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
 		ResourceKey<Block> blockKey = keyOfBlock(name);
 		Block block = blockFactory.apply(settings.setId(blockKey));
@@ -47,11 +58,11 @@ public class ModBlocks {
 
 		return Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
 	}
-
+	@Deprecated
 	private static ResourceKey<Block> keyOfBlock(String name) {
 		return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Diaodiao.MOD_ID, name));
 	}
-
+	@Deprecated
 	private static ResourceKey<Item> keyOfItem(String name) {
 		return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Diaodiao.MOD_ID, name));
 	}

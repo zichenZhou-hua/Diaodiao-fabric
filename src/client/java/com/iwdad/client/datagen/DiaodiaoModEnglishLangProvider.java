@@ -2,7 +2,7 @@ package com.iwdad.client.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.iwdad.items.ModItems;
+import com.iwdad.init.ModItems;
 import net.minecraft.core.HolderLookup;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;

@@ -1,7 +1,6 @@
 package com.iwdad.client;
 
-import com.iwdad.Diaodiao;
-import com.iwdad.items.ModParticles;
+import com.iwdad.init.ModParticles;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;

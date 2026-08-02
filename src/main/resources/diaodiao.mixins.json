@@ -3,7 +3,7 @@
 	"package": "com.iwdad.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"EMixin"
+		"ExampleeeeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,10 +1,11 @@
 package com.iwdad;
 
 
-import com.iwdad.items.ModBlocks;
-import com.iwdad.items.ModItems;
+import com.iwdad.init.ModCreativeModeTab;
+import com.iwdad.init.ModBlocks;
+import com.iwdad.init.ModItems;
 
-import com.iwdad.items.ModParticles;
+import com.iwdad.init.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -28,6 +29,10 @@ public class Diaodiao implements ModInitializer {
 		
 		LOGGER.info("粒子加载");
 		ModParticles.initialize();
+
+		LOGGER.info("创造标签");
+		ModCreativeModeTab.initialize();
+
 
 	}
 		

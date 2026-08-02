@@ -1,7 +1,6 @@
-package com.iwdad.items;
+package com.iwdad.init;
 
 import com.iwdad.Diaodiao;
-import com.iwdad.modid.ModItemIds;
 
 
 import java.util.function.Function;
@@ -15,25 +14,23 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-//import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.CreativeModeTabs;
-//import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
-
-
-
 
 public class ModItems {
     //物品
-    public static final Item TEST_ITEM_F = register(ModItemIds.TEST_ITEM_F);
-    public static final Item TEST_ITEM_TF = register(ModItemIds.TEST_ITEM_TF);
-    public static final Item SHIT = register(ModItemIds.SHIT,
+    public static final Item TEST_ITEM_F = register(
+            ModIdmap.TEST_ITEM_F
+    );
+    public static final Item TEST_ITEM_TF = register(
+            ModIdmap.TEST_ITEM_TF
+    );
+    public static final Item SHIT = register(
+            ModIdmap.SHIT,
             Item::new,
             new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -58,7 +55,8 @@ public class ModItems {
             ItemTags.PLANKS
 
     );
-    public static final Item MYSTIC_SWORD = register(ModItemIds.MYSTIC_SWORD,
+    public static final Item MYSTIC_SWORD = register(
+            ModIdmap.MYSTIC_SWORD,
             Item::new,
             new Item.Properties().sword(MYSTIC_TOOL_MATERIAL, 30f, 100f)
                     .fireResistant()
@@ -70,7 +68,6 @@ public class ModItems {
 
 //
 
-
     public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
         // Create the item instance.
         Item item = itemFactory.apply(settings.setId(itemKey));
@@ -81,6 +78,16 @@ public class ModItems {
     public static Item register(ResourceKey<Item> itemKey){
         return register(itemKey, Item::new, new Item.Properties());
     }
+
+
+
+
+
+
+
+
+
+
     @Deprecated //这两个是根据26.1的docs写的”私有“
     private static Item registerItem(final String id, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Diaodiao.MOD_ID, id));
@@ -94,8 +101,6 @@ public class ModItems {
 
 
     public static void initialize() {
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-                .register((creativeTab) -> creativeTab.accept(TEST_ITEM_F));
 
     }
 
@@ -104,3 +109,4 @@ public class ModItems {
 
 
 }
+

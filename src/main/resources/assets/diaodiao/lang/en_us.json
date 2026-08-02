@@ -3,5 +3,7 @@
     "block.diaodiao.condensed_dirt": "Condensed Dirt",
     "item.diaodiao.shit": "shit",
     "item.diaodiao.mystic_sword": "mystic sword",
-    "item.diaodiao.test_item_tf": "datagen test tf"
+    "item.diaodiao.test_item_tf": "datagen test tf",
+    "creativeTab.diaodiao": "diaodiao",
+    "diaodiao.diaodiao": "diaodiao"
 }

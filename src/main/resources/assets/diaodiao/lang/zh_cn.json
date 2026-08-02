@@ -3,5 +3,7 @@
     "block.diaodiao.condensed_dirt": "凝结泥土",
     "item.diaodiao.shit": "屎",
     "item.diaodiao.mystic_sword": "蜜饯",
-    "item.diaodiao.test_item_tf": "语言生成测试物品tf"
+    "item.diaodiao.test_item_tf": "语言生成测试物品tf",
+    "creativeTab.diaodiao": "Diaodiao",
+    "diaodiao.diaodiao": "diaodiao"
 }
