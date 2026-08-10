@@ -24,13 +24,13 @@ import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 public class ModItems {
     //物品
     public static final Item TEST_ITEM_F = register(
-            ModIdmap.TEST_ITEM_F
+            ModID.TEST_ITEM_F
     );
     public static final Item TEST_ITEM_TF = register(
-            ModIdmap.TEST_ITEM_TF
+            ModID.TEST_ITEM_TF
     );
     public static final Item SHIT = register(
-            ModIdmap.SHIT,
+            ModID.SHIT,
             Item::new,
             new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -56,7 +56,15 @@ public class ModItems {
 
     );
     public static final Item MYSTIC_SWORD = register(
-            ModIdmap.MYSTIC_SWORD,
+            ModID.MYSTIC_SWORD,
+            Item::new,
+            new Item.Properties().sword(MYSTIC_TOOL_MATERIAL, 30f, 100f)
+                    .fireResistant()
+                    .rarity(Rarity.EPIC)
+
+    );
+    public static final Item MYSTIC_SWORD_F= register(
+            ModID.MYSTIC_SWORD_F,
             Item::new,
             new Item.Properties().sword(MYSTIC_TOOL_MATERIAL, 30f, 100f)
                     .fireResistant()

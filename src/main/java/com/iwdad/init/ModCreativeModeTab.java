@@ -26,8 +26,9 @@ public class ModCreativeModeTab {
                 init.accept(ModItems.SHIT);
                 ItemStack mystic_sword = new ItemStack(ModItems.MYSTIC_SWORD);
                 mystic_sword.set(DataComponents.ITEM_NAME, Component.literal("超级无敌捣屎棍"));
-                mystic_sword.set(DataComponents.LORE, new ItemLore(List.of(Component.literal("物品栏限定版").withStyle(ChatFormatting.GOLD))));
+                mystic_sword.set(DataComponents.LORE, new ItemLore(List.of(Component.literal("物品栏限定版").withStyle(ChatFormatting.WHITE))));
                 init.accept(mystic_sword);
+                
                 init.accept(ModBlocks.CONDENSED_DIRT);
                 init.accept(ModItems.TEST_ITEM_F);
                 init.accept(ModItems.TEST_ITEM_TF);
