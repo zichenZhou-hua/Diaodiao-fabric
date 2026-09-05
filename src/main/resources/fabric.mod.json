@@ -19,7 +19,8 @@
 			"com.iwdad.Diaodiao"
 		],
 		"client": [
-			"com.iwdad.client.DiaodiaoClient"
+			"com.iwdad.client.DiaodiaoClient",
+			"com.iwdad.client.DiaodiaoClientCommands"
 		],
 		"fabric-datagen": [
 			"com.iwdad.client.datagen.DiaodiaoDataGenerator"
